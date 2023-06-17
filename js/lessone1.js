@@ -35,7 +35,6 @@
 // const newmonth = month === 12 ? "вірно" : "не знаєте 12";
 // console.log(newmonth);
 
-
 // ЗАДАЧА 5
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ДОЗВОЛЯТИМЕ ЮЗЕРУ ВВОДИТИ ЧИСЛО І ОПРИДІЛЯТИМЕ ЧИ ЦЕ ПАРНЕ ЧИСЛО, ЧИ НЕ ПАРНЕ.
 
@@ -74,19 +73,54 @@
 //    console.log("Перевірь дані!");
 // }
 
-
 // ЗАДАЧА 7
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ, ЩО НЕ ВІРНИЙ ЛОГІН
 
-const login = prompt("Введіть логін");
-const password = prompt("введіть пароль");
+// const login = prompt("Введіть логін");
+// const password = prompt("введіть пароль");
 
-const loginUser = "Abba";
-const passwordUser = "123A";
+// const loginUser = "Abba";
+// const passwordUser = "123A";
 
-if (loginUser === login && passwordUser === password) {
-  console.log("Вітаю вірно");
-}
-  else {
-  console.log("Не вірно");
-  }
+// if (loginUser === login && passwordUser === password) {
+//   console.log("Вітаю вірно");
+// }
+//   else {
+//   console.log("Не вірно");
+//   }
+
+// ЗАДАЧА 8
+// НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ(ВИКОРИСТАЙ IF..ELSE, ТА ПЕРЕПИШИ НА SWITCH)
+// ЯКЩО ДЕНЬ - ціна 1.99
+// ЯУЩО НЕДІЛЯ - ціна 5.99
+// ЯКЩО МІСЯЦЬ - ціна 10.99
+// ЯКЩО РІК - ціна 100.99
+
+// const period = prompt("Вкажіть період підписки").toUpperCase();
+
+// switch (period) {
+//   case "ДЕНЬ":
+//     console.log(1.99);
+//     break;
+
+//   case "НЕДІЛЯ":
+//     console.log(5.99);
+//     break;
+
+//   case "МІСЯЦЬ":
+//     console.log(10.99);
+//     break;
+
+//   case "РІК":
+//     console.log(100.99);
+//     break;
+
+//   default:
+//     console.log("Помилка!!!");
+// }
+// ЗАДАЧА 9
+// НАПИШІТЬ ЦИКЛ FOR ЯКА БУДЕ ВИВОДИТИ У КОНСОЛЬ ЧИСЛА ЗА ЗРОСТАННЯМ ВІД MIN ДО MAX, ПІСЛЯ ТОГО ЧИСЛА КРАТНІ 10
+
+// ЗАДАЧА 10
+// НАПИШІТЬ ПРОГРАМУ, ЯКА БУДЕ ВИЗНАЧАТИ ДОВЖИНУ ІМЕНІ , ЯКЩО ІМЯ БІЛЬШЕ 7 СИМВОЛІВ, КОНСОЛЬ ВИВОДИТЬ "Wow, you  have a REALLY long name!" , ЯКЩО МЕНШЕ 7
+// "Your name isn't very long"

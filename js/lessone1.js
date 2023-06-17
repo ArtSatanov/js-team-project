@@ -2,10 +2,19 @@
 // НАПИШІТЬ РЕЧЕННЯ ЗА ДОПОМОГОЮ ШАБЛОННОГО РЯДКА
 // "ДОБРОГО ДНЯ,МЕНЕ ЗВАТИ ГАЛИНА, МЕНІ 35 РОКІВ, Я ВИВЧАЮ JAVASCRIPT"
 
-const name = "Bogdan";
-const age = 35;
-const language = "JavaScript";
+// const name = "Bogdan";
+// const age = 35;
+// const language = "JavaScript";
 
-console.log(
-  `ДОБРОГО ДНЯ,МЕНЕ ЗВАТИ ${name}, МЕНІ ${age} РОКІВ, Я ВИВЧАЮ ${language}`
-);
+// console.log(
+//   `ДОБРОГО ДНЯ,МЕНЕ ЗВАТИ ${name}, МЕНІ ${age} РОКІВ, Я ВИВЧАЮ ${language}`
+// );
+
+// ЗАДАЧА 2
+// ЗАПИТАТИ У КОРИСТУВАЧА ІМЯ, ПОЧТУ , ТЕЛЕФОН, І ПОКАЗАТИ У КОНСОЛІ "КОРИСТУВАЧ __ ВИКОРИСТОВУЄ  __ ПОЧТУ І __ ТЕЛЕФОН"
+
+const name = prompt("введіть своє імя");
+const tel = prompt("введіть свій телефон ");
+const email = prompt("введіть свою пошту");
+
+console.log(`користувач ${name}, телефон ${tel}, пошта ${email}`);

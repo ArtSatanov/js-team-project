@@ -56,9 +56,9 @@
 // НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
 // 12 - 2
-// 3 - 5 
+// 3 - 5
 // 6 - 8
-// 9 - 11 
+// 9 - 11
 
 // const month = Number(prompt("місяць народження?"));
 
@@ -69,7 +69,24 @@
 // } else if (month >= 6 && month <= 8 ) {
 //    console.log("Літо");
 // } else if (month >= 9 && month <= 11 ) {
-//    console.log("Осінь"); 
+//    console.log("Осінь");
 // } else {
-//    console.log("Перевірь дані!"); 
+//    console.log("Перевірь дані!");
 // }
+
+
+// ЗАДАЧА 7
+// НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ, ЩО НЕ ВІРНИЙ ЛОГІН
+
+const login = prompt("Введіть логін");
+const password = prompt("введіть пароль");
+
+const loginUser = "Abba";
+const passwordUser = "123A";
+
+if (loginUser === login && passwordUser === password) {
+  console.log("Вітаю вірно");
+}
+  else {
+  console.log("Не вірно");
+  }

@@ -20,9 +20,17 @@
 // console.log(`користувач ${name}, телефон ${tel}, пошта ${email}`);
 // ЗАДАЧА 3
 // ПОРАХУЙТЕ СУМУ ТОВАРІВ У КОРЗИНІ . ПОТРІБНО ВВЕСТИ СУМУ 3-Х ТОВАРІВ І ПОРАХУВАТИ ЇХ СУМУ
-const nameProd1 = Number(prompt("Введіть ціну Телевізора."));
-const nameProd2 = +prompt("Введіть ціну телефону.");
-const nameProd3 = +prompt("Введіть ціну холодильнику.");
-const sum = nameProd1 + nameProd2 + nameProd3;
+// const nameProd1 = Number(prompt("Введіть ціну Телевізора."));
+// const nameProd2 = +prompt("Введіть ціну телефону.");
+// const nameProd3 = +prompt("Введіть ціну холодильнику.");
+// const sum = nameProd1 + nameProd2 + nameProd3;
 
-console.log(`Вартість товару ${sum}`);
+// console.log(`Вартість товару ${sum}`);
+// ЗАДАЧА 4
+// ВИКОРИСТОВУЮЧИ КОНСТРУКЦІЮ IF...ELSE , НАПИШИ КОД, ЯКИЙ БУДЕ ЗАПИТУВАТИ: 
+// "СКІЛЬКИ МІСЯЦІВ МАЄ РІК", ЯКЩО КОРИСТУВАЧ ВВОДИТЬ 12 ТО У КОНСОЛІ ПИШЕ ВІРНО, ЯКЩО НЕ ПРАВИЛЬНО КОРИСТУВАЧ ВВІВ, ТОДІ У КОНСОЛІ ПИШЕ 
+// "НЕ ЗНАЄТЕ? 12"
+const month = Number(prompt("СКІЛЬКИ МІСЯЦІВ МАЄ РІК?")) 
+// if (month === 12) { console.log("вірно") } else { console.log("НЕ ЗНАЄТЕ? 12") }
+const newmonth = month === 12 ? "вірно" : "не знаєте 12";
+console.log(newmonth); 

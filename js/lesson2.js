@@ -96,14 +96,31 @@
 // console.log(calculateAverage(27, 43, 2, 8, 36));
 
 // ЗАДАЧА 6
-// Напишіть ф - цію greet(name), яка при виклику буде получати імя(як приклад, "Василь"), і логінувати рядок "Привіт, <імя>".У випадку, відсутнього 
+// Напишіть ф - цію greet(name), яка при виклику буде получати імя(як приклад, "Василь"), і логінувати рядок "Привіт, <імя>".У випадку, відсутнього
 // відсутнього значення, виводе аргумент "Привіт , гість"
 // console.log(greet("Василь"));//Привіт Василь
 // console.log(greet());//Привіт гість
 
-function greet(name = 'гість') {
-    return `Привіт, ${name}`;
-}
+// function greet(name = 'гість') {
+//     return `Привіт, ${name}`;
+// }
 
-console.log(greet("Василь"));
-console.log(greet());
+// console.log(greet("Василь"));
+// console.log(greet());
+// ЗАДАЧА 7
+// Виконайте рефакторинг замінивши обявлення ф-ції з function declaration на function expression та на стрілочну функцію
+// function checkNumbers(a, b) {
+//   if (a > b) {
+//     return `число ${a} більше ${b}`;
+//   }
+//   return `число ${b} більше ${a}`;
+// }
+// const checkNumbers = function (a, b) {
+//    if (a > b) {
+//      return `число ${a} більше ${b}`;
+//    }
+//   return `число ${b} більше ${a}`;
+// }
+const checkNumbers = (a, b) =>  (a > b) ? `число ${a} більше ${b}` : `число ${b} більше ${a}`;
+console.log(checkNumbers(5, 2));
+console.log(checkNumbers(5, 7));

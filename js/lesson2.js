@@ -121,6 +121,24 @@
 //    }
 //   return `число ${b} більше ${a}`;
 // }
-const checkNumbers = (a, b) =>  (a > b) ? `число ${a} більше ${b}` : `число ${b} більше ${a}`;
-console.log(checkNumbers(5, 2));
-console.log(checkNumbers(5, 7));
+// const checkNumbers = (a, b) =>  (a > b) ? `число ${a} більше ${b}` : `число ${b} більше ${a}`;
+// console.log(checkNumbers(5, 2));
+// console.log(checkNumbers(5, 7));
+// Напишіть ф - цію capitalize, яка буде приймати рядок і буде повертати новий рядок,
+//     де кожне слово буде з великої букви
+capitalize('the quick brown fox')// 'The Quick Brown Fox '
+
+function capitalize(string) {
+    const strNew = string.split(" ");
+    const arr = []
+    for (const str of strNew) {
+        const firstLetter = str[0].toUpperCase();
+        const secondLetter = str.slice(1);
+        const total = `${firstLetter}${secondLetter}`;
+            arr.push(total);
+    }
+    return arr.join(' ');
+    
+}
+
+console.log(capitalize('the quick brown fox'));

@@ -62,11 +62,48 @@
 // console.log(firstNum);
 // ЗАДАЧА 4
 //  Провірте , чи являється рядок полідромом
-const str = "ротатор"; //true
+// const str = "ротатор"; //true
 // const newString = "Hello";//false
 // const array1 = str.split("");
 // const array2 = array1.reverse();
 // const str2 = array2.join("");
 // console.log(str === str2);
-const newVal = str.split("").reverse().join("");
-console.log(newVal === str);
+// const newVal = str.split("").reverse().join("");
+// console.log(newVal === str);
+
+
+// ЗАДАЧА 5
+// Напишіть ф - цію calculateAverage() яка приймає довільну кількість аргументів і повертає їх середнє значення.Всі аргументи будуть тільки числовими
+
+// console.log(calculateAverage(1, 2, 3, 4)); // 2.5
+// console.log(calculateAverage(14, 8, 2)); // 8
+// console.log(calculateAverage(27, 43, 2, 8, 36));// 23.2
+
+// function calculateAverage(...arrgs) {
+//     console.log(arrgs);
+
+//     let totalCount = 0;
+
+//     for (const arrg of arrgs) {
+//         totalCount += arrg;
+
+//     }
+//     return totalCount / arrgs.length;
+// }
+
+// console.log(calculateAverage(1, 2, 3, 4));
+// console.log(calculateAverage(14, 8, 2));
+// console.log(calculateAverage(27, 43, 2, 8, 36));
+
+// ЗАДАЧА 6
+// Напишіть ф - цію greet(name), яка при виклику буде получати імя(як приклад, "Василь"), і логінувати рядок "Привіт, <імя>".У випадку, відсутнього 
+// відсутнього значення, виводе аргумент "Привіт , гість"
+// console.log(greet("Василь"));//Привіт Василь
+// console.log(greet());//Привіт гість
+
+function greet(name = 'гість') {
+    return `Привіт, ${name}`;
+}
+
+console.log(greet("Василь"));
+console.log(greet());

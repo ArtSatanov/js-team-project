@@ -64,7 +64,9 @@
 //  Провірте , чи являється рядок полідромом
 const str = "ротатор"; //true
 // const newString = "Hello";//false
-const array1 = str.split("");
-const array2 = array1.reverse();
-const str2 = array2.join("");
-console.log(str === str2);
+// const array1 = str.split("");
+// const array2 = array1.reverse();
+// const str2 = array2.join("");
+// console.log(str === str2);
+const newVal = str.split("").reverse().join("");
+console.log(newVal === str);

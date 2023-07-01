@@ -120,7 +120,25 @@
 // }
 // ЗАДАЧА 9
 // НАПИШІТЬ ЦИКЛ FOR ЯКА БУДЕ ВИВОДИТИ У КОНСОЛЬ ЧИСЛА ЗА ЗРОСТАННЯМ ВІД MIN ДО MAX, ПІСЛЯ ТОГО ЧИСЛА КРАТНІ 10
+// const min = 1;
+// const max = 200;
+
+// for (let i = min; i <= max; i += 1) {
+//   if (i % 10 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 1; i <= 20; i += 1) {
+//   console.log(i);
+// }
 
 // ЗАДАЧА 10
 // НАПИШІТЬ ПРОГРАМУ, ЯКА БУДЕ ВИЗНАЧАТИ ДОВЖИНУ ІМЕНІ , ЯКЩО ІМЯ БІЛЬШЕ 7 СИМВОЛІВ, КОНСОЛЬ ВИВОДИТЬ "Wow, you  have a REALLY long name!" , ЯКЩО МЕНШЕ 7
 // "Your name isn't very long"
+
+// const Name = prompt("add your name").length;
+// console.log(Name);
+// const lengthName =
+//   Name > 7 ? "Wow, you  have a REALLY long name!" : "Your name isn't very long";
+// console.log(lengthName);

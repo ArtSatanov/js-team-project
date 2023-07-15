@@ -128,14 +128,30 @@ const scientists = [
 
 // 2)порахувати загальну суму років скільки прожили вчені , і визначити середнє значення;
 
-function getAvarageYers() {
-  return scientists.reduce((acc, item, index, array) => {
-    acc = acc + (item.dead - item.born);
+// function getAvarageYers() {
+//   return scientists.reduce((acc, item, index, array) => {
+//     acc = acc + (item.dead - item.born);
 
-    return acc;
-  }, 0);
-}
-getAvarageYers();
-const getAvarage = getAvarageYers() / scientists.length;
+//     return acc;
+//   }, 0);
+// }
+// getAvarageYers();
+// const getAvarage = getAvarageYers() / scientists.length;
 
-console.log(getAvarage);
+// console.log(getAvarage);
+// 3) відсортувати по алфавіту;
+// function sortScientistsByAlfabet() {
+//   // return [...scientists].sort((smartPeople1, smartPeople2) => smartPeople1.name.localeCompare(smartPeople2.name));
+//    return [...scientists].sort((smartPeople1, smartPeople2) => smartPeople1.name > smartPeople2.name ? -1 : 1);
+// }
+// console.log(sortScientists());
+// 4)відсортувати по кількості прожитих років;
+function sortScientistsByYearsToAlive() {
+  return [...scientists].sort((smartPeopple1, smartPeopple2) => (smartPeopple1.dead - smartPeopple1.born) - (smartPeopple2.dead - smartPeopple2.born) );
+};
+const result = sortScientistsByYearsToAlive();
+console.log(
+  result
+)
+
+

@@ -146,12 +146,29 @@ const scientists = [
 // }
 // console.log(sortScientists());
 // 4)відсортувати по кількості прожитих років;
-function sortScientistsByYearsToAlive() {
-  return [...scientists].sort((smartPeopple1, smartPeopple2) => (smartPeopple1.dead - smartPeopple1.born) - (smartPeopple2.dead - smartPeopple2.born) );
-};
-const result = sortScientistsByYearsToAlive();
-console.log(
-  result
-)
+// function sortScientistsByYearsToAlive() {
+//   return [...scientists].sort((smartPeopple1, smartPeopple2) => (smartPeopple1.dead - smartPeopple1.born) - (smartPeopple2.dead - smartPeopple2.born) );
+// };
+// const result = sortScientistsByYearsToAlive();
+// console.log(
+//   result
+// )
 
+// 5)відфільтрувати, хто народився в 15,16,17ст;
+// function getBorn() {
+//   return scientists.filter(({ born }) => born > 1500 && born < 1800);
+// }
 
+// const res = getBorn();
+// console.log(res);
+
+// 6)знайти рік народження Albert Einstein;
+
+// function getEMC2() {
+//   return scientists.find(
+//     ({ name, surname }) => name === "Albert" && surname === "Einstein"
+//   ).born;
+// }
+
+// const res = getEMC2();
+// console.log(res);

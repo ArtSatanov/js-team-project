@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+ initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=
- initial-scale=1.0" />
-  <title>Document</title>
-</head>
-
-<body>
-  <ul class="js-goods"></ul>
-  <!-- <script src="./js/lessone1.js"></script> -->
-  <!-- <script src="./js/lesson2.js"></script> -->
-  <!-- <script src="./js/lesson3.js"></script> -->
-  <script src="./js/lessons4.js"></script>
-</body>
-
+  <body>
+    <!-- <ul class="js-goods"></ul> -->
+    <div class="container">
+      <h2 class="title">Скільки коштує мясо на шашлик :) ?</h2>
+      <form class="form">
+        <label for="price">Ціна грн</label>
+        <input type="text" id="price" name="price" value="50" />
+        <label for="quantity">Кількість<span class="amount">1</span>кг </label>
+        <input
+          type="range"
+          id="quantity"
+          name="quantity"
+          value="1"
+          min="1"
+          ,
+          max="20"
+        />
+        <button type="submit" class="btn">Calculate</button>;
+      </form>
+      <p class="text-right total"></p>
+    </div>
+    <!-- <script src="./js/lessone1.js"></script> -->
+    <!-- <script src="./js/lesson2.js"></script> -->
+    <!-- <script src="./js/lesson3.js"></script> -->
+    <script type="module" src="./js/lessons4.js"></script>
+  </body>
 </html>
